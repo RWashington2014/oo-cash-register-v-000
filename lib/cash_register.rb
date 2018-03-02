@@ -22,7 +22,7 @@ class CashRegister
       @items << item_name
       @total = @total + price
     end
-    @last_transaction = price
+    self.last_transaction = price
 
   end
 
