@@ -31,11 +31,11 @@ class CashRegister
     success = "After the discount, the total comes to $"
     no_discount = "There is no discount to apply."
 
-    if @discount != nil
+    if @discount != 0
       @total = (@total - (@total * percent)).to_i
       success + "#{@total}."
     else
-      @total = (@total - (@total * percent)).to_i
+      #@total = (@total - (@total * percent)).to_i
       no_discount
     end
   end
